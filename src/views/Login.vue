@@ -6,7 +6,7 @@
           <v-col cols="12" sm="8" md="4">
             <v-card class="elevation-12">
               <v-toolbar color="primary" dark flat>
-                <v-toolbar-title>Acesso</v-toolbar-title>
+                <v-toolbar-title>Acesso - AppNese</v-toolbar-title>
                 <v-spacer></v-spacer>
               </v-toolbar>
               <v-card-text>
@@ -15,7 +15,7 @@
 
                   <v-text-field
                     id="password"
-                    label="Password"
+                    label="Senha"
                     name="password"
                     type="password"
                   ></v-text-field>
@@ -23,7 +23,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary">Login</v-btn>
+                <v-btn color="primary" >Entrar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
