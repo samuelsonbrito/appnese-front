@@ -29,6 +29,28 @@
                   </v-card-text>
                 </v-card>
               </div>
+              <br />
+              <v-row>
+                <v-col cols="12" md="12">
+                  <v-checkbox
+                    v-model="aceiteTermos"
+                    label="Declaro que os dados informados são verdadeiros"
+                  ></v-checkbox>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col cols="5" md="6">
+                  <v-btn color="error" large v-on:click="voltar">Voltar</v-btn>
+                </v-col>
+                <v-col cols="7" md="6">
+                  <v-btn
+                    color="success"
+                    large
+                    :disabled="!aceiteTermos"
+                    v-on:click="enviar()"
+                  >Enviar</v-btn>
+                </v-col>
+              </v-row>
             </v-container>
           </v-form>
         </v-col>
@@ -48,6 +70,7 @@ export default {
 
   data() {
     return {
+      aceiteTermos: true,
       questions: [
         {
           id: 1,
@@ -66,6 +89,15 @@ export default {
         }
       ]
     };
+  },
+
+  methods: {
+    voltar() {
+      this.$router.push("/exames");
+    },
+    enviar(){
+        alert('Enviado com sucesso!')
+    }
   }
 };
 </script>

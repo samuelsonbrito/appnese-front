@@ -23,7 +23,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" >Entrar</v-btn>
+                <v-btn color="primary" v-on:click="login">Entrar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -34,12 +34,14 @@
 </template>
 
 <script>
+
 export default {
-  props: {
-    source: String
-  },
-  data: () => ({
-    drawer: null
-  })
-};
+
+  methods: {
+    login(){
+     this.$router.push('/exames')
+    }
+  }
+
+}
 </script>

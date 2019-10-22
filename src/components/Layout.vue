@@ -56,7 +56,7 @@ export default {
     source: String
   },
   data: () => ({
-    drawer: null
+    drawer: false
   }),
 };
 </script>

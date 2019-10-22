@@ -5,7 +5,7 @@
         <v-col class="text-center">
 
           <v-list>
-            <v-list-item v-for="item in items" :key="item.title" @click>
+            <v-list-item v-for="item in items" :key="item.title" @click="questionario">
               <v-list-item-icon>
                 <v-icon v-if="item.icon" color="pink">mdi-file-document-box</v-icon>
               </v-list-item-icon>
@@ -45,6 +45,11 @@ export default {
           { title: "Exame 10", icon: "drive-document" },
           ]
     };
+  },
+  methods: {
+      questionario(){
+          this.$router.push('/questionario')
+      }
   }
 };
 </script>

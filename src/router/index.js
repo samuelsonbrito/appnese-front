@@ -9,14 +9,9 @@ import Questionario from '../views/Questionario'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'login',
-    component: Login
-  },
 
   {
-    path: '/hospital',
+    path: '/',
     name: 'hospital',
     component: Hospital
   },
