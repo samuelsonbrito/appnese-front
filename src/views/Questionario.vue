@@ -70,24 +70,97 @@ export default {
 
   data() {
     return {
-      aceiteTermos: true,
+      aceiteTermos: false,
       questions: [
-        {
-          id: 1,
-          description: "Assinale caso possua alguma das doenças abaixo:",
-          alternatives: [
-            { description: "Asma" },
-            { description: "Bronquite" },
-            { description: "Rinite" },
-            { description: "Alguma outra doença pulmonar? Quais?" },
-            { description: "Doenças cardiacas. Qual?" },
-            { description: "Pressão alta" },
-            { description: "Insuficiência cardica" },
-            { description: "Angina" },
-            { description: "Infarto recente" }
-          ]
-        }
-      ]
+    {
+        "id": 1,
+        "description": "Você já fez mamografia anteriormente?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 2,
+        "description": "Trouxe exames anteriores?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 3,
+        "description": "Existem casos de câncer de mama na sua família?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 4,
+        "description": "Você faz uso de hormônio?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 5,
+        "description": "Você já fez punção ou biopsia de mama?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 6,
+        "description": "Já fez alguma cirurgia nas mamas?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 7,
+        "description": "Possui prótese mamária?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    },
+
+    {
+        "id": 8,
+        "description": "Já fez radioterapia na mama?",
+        "alternatives": [
+            {
+                "description": "Marque"
+            }
+
+        ]
+    }
+
+]
     };
   },
 

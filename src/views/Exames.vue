@@ -15,6 +15,8 @@
               </v-list-item-content>
             </v-list-item>
           </v-list>
+
+          
           
         </v-col>
       </v-row>
@@ -33,16 +35,8 @@ export default {
   data() {
     return {
       items: [
-          { title: "Exame 1", icon: "drive-document" },
+          { title: "Mamografia", icon: "drive-document" },
           { title: "Exame 2", icon: "drive-document" },
-          { title: "Exame 3", icon: "drive-document" },
-          { title: "Exame 4", icon: "drive-document" },
-          { title: "Exame 5", icon: "drive-document" },
-          { title: "Exame 6", icon: "drive-document" },
-          { title: "Exame 7", icon: "drive-document" },
-          { title: "Exame 8", icon: "drive-document" },
-          { title: "Exame 9", icon: "drive-document" },
-          { title: "Exame 10", icon: "drive-document" },
           ]
     };
   },
